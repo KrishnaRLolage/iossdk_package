@@ -7,6 +7,11 @@
 		<key>DragonMedicalSpeechKit.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>DragonMedicalSpeechKitLib.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
 		<key>DragonMedicalSpeechKitSDK.xcscheme_^#shared#^_</key>
