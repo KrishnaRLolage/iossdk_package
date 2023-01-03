@@ -24,7 +24,7 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
             name: "DragonMedicalSpeechKitBundle",
-            dependencies: ["DragonMedicalSpeechKit"],
+//            dependencies: ["DragonMedicalSpeechKit"],
             resources: [.copy("Resources/DragonMedicalSpeechKit.bundle")]
         ),
 //        .binaryTarget(
@@ -32,9 +32,9 @@ let package = Package(
 //            url: "https://github.com/ravindra-psc/iossdk_xcframework/raw/main/0.0.4.zip",
 //            checksum: "939b499b31242c65438621140743d96ef76d47c2be88bd6f183ee242fee782a5"
 //        ),
-        .binaryTarget(
-                    name: "DragonMedicalSpeechKit",
-                    path: "SDK/DragonMedicalSpeechKit.zip"
-                ),
+//        .binaryTarget(
+//                    name: "DragonMedicalSpeechKit",
+//                    path: "SDK/DragonMedicalSpeechKit.zip"
+//                ),
     ]
 )

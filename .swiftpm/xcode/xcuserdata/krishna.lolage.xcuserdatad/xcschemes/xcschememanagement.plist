@@ -27,6 +27,21 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>DragonMedicalSpeechKitBundle</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DragonMedicalSpeechKitLib</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DragonMedicalSpeechKitLib_DragonMedicalSpeechKitBundle</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>DragonMedicalSpeechKitSDK</key>
 		<dict>
 			<key>primary</key>
