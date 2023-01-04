@@ -12,7 +12,7 @@ let package = Package(
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
         .library(
             name: "DragonMedicalSpeechKit",
-            targets: ["DragonMedicalSpeechKitSDK"]
+            targets: ["DragonMedicalSpeechKit"]
         )
     ],
     dependencies: [
@@ -27,16 +27,13 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
             name: "DragonMedicalSpeechKitBundle",
-            resources: [.copy("assets/DragonMedicalSpeechKit.bundle")]
-        ),
-        .target(
-            name: "DragonMedicalSpeechKitSDK",
             dependencies: [
                 .target(name: "DragonMedicalSpeechKit"),
                 .product(name: "YbridOpus", package: "YbridOpus")
             ],
-            resources: [.copy("assets")]
+            resources: [.copy("assets/DragonMedicalSpeechKit.bundle")]
         ),
+        
 //        .binaryTarget(
 //            name: "DragonMedicalSpeechKit",
 //            url: "https://github.com/ravindra-psc/iossdk_xcframework/raw/main/0.0.4.zip",
