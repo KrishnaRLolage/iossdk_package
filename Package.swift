@@ -36,7 +36,7 @@ let package = Package(
                 .target(name: "DragonMedicalSpeechKit"),
                 .product(name: "YbridOpus", package: "YbridOpus")
             ],
-            resources: [.copy("")]
+            resources: [.copy("assets/DragonMedicalSpeechKit.bundle")]
         ),
         .binaryTarget(
                     name: "DragonMedicalSpeechKit",
