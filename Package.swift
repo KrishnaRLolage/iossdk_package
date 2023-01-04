@@ -15,15 +15,19 @@ let package = Package(
             targets: ["DragonMedicalSpeechKit", "DragonMedicalSpeechKitBundle"]
         )
     ],
+    dependencies: [
+            // Dependencies declare other packages that this package depends on.
+            .package(
+              name: "YbridOpus",
+              url: "https://github.com/ybrid/opus-swift.git",
+              from: "0.8.0")
+        ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
             name: "DragonMedicalSpeechKitBundle",
-            dependencies: [
-                .target(name: "DragonMedicalSpeechKit"),
-                .target(name: "opus")
-            ],
+            dependencies: ["YbridOpus"],
             resources: [.copy("Resources/DragonMedicalSpeechKit.bundle")]
         ),
 //        .binaryTarget(
@@ -34,11 +38,7 @@ let package = Package(
         .binaryTarget(
                     name: "DragonMedicalSpeechKit",
                     path: "Sources/SDK/DragonMedicalSpeechKit.zip"
-                ),
-        .binaryTarget(
-                    name: "opus",
-                    path: "Sources/opus/opus.zip"
-                ),
+                )
     ]
 )
 
