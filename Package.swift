@@ -28,7 +28,13 @@ let package = Package(
         .binaryTarget(
                     name: "DragonMedicalSpeechKit",
                     path: "Sources/SDK/DragonMedicalSpeechKit.zip"
-                )
+                ),
+        .target(
+            name: "opus",
+            dependencies: [.product(name: "YbridOpus", package: "YbridOpus")],
+            path: "Sources/SDK",
+            resources: [.process("test.txt")]
+        )
     ]
 )
 
