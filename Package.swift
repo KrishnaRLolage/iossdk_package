@@ -27,7 +27,7 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
             name: "DragonMedicalSpeechKitBundle",
-            resources: [.copy("Resources/DragonMedicalSpeechKit.bundle")]
+            resources: [.copy("assets/DragonMedicalSpeechKit.bundle")]
         ),
         .target(
             name: "DragonMedicalSpeechKitSDK",
@@ -35,7 +35,7 @@ let package = Package(
                 .target(name: "DragonMedicalSpeechKit"),
                 .product(name: "YbridOpus", package: "YbridOpus")
             ],
-            resources: [.copy("Resources")]
+            resources: [.copy("assets")]
         ),
 //        .binaryTarget(
 //            name: "DragonMedicalSpeechKit",
