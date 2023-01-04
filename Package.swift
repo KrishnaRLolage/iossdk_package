@@ -4,15 +4,15 @@
 import PackageDescription
 
 let package = Package(
-    name: "DragonMedicalSpeechKitLib",
+    name: "DragonMedicalSpeechKit",
     platforms: [
         .iOS(.v14)
         ],
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
         .library(
-            name: "DragonMedicalSpeechKitLib",
-            targets: ["DragonMedicalSpeechKit", "opus"]
+            name: "DragonMedicalSpeechKit",
+            targets: ["DragonMedicalSpeechKit", "DragonMedicalSpeechKitBundle"]
         )
     ],
     targets: [
@@ -20,12 +20,11 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
             name: "DragonMedicalSpeechKitBundle",
+            dependencies: [
+                .target(name: "DragonMedicalSpeechKit"),
+                .target(name: "opus")
+            ],
             resources: [.copy("Resources/DragonMedicalSpeechKit.bundle")]
-        ),
-        .target(
-            name: "OpusLinker",
-            dependencies: ["opus"],
-            resources: [.copy("")]
         ),
 //        .binaryTarget(
 //            name: "DragonMedicalSpeechKit",
