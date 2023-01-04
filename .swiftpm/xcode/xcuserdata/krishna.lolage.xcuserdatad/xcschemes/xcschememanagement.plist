@@ -52,6 +52,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>DragonMedicalSpeechKit_DragonMedicalSpeechKit</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>DragonMedicalSpeechKit_DragonMedicalSpeechKitBundle</key>
 		<dict>
 			<key>primary</key>

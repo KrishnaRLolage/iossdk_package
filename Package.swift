@@ -26,22 +26,11 @@ let package = Package(
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
-            name: "DragonMedicalSpeechKitBundle",
-            dependencies: [
-                .target(name: "DragonMedicalSpeechKit"),
-                .product(name: "YbridOpus", package: "YbridOpus")
-            ],
-            resources: [.copy("assets/DragonMedicalSpeechKit.bundle")]
-        ),
-        
-//        .binaryTarget(
-//            name: "DragonMedicalSpeechKit",
-//            url: "https://github.com/ravindra-psc/iossdk_xcframework/raw/main/0.0.4.zip",
-//            checksum: "939b499b31242c65438621140743d96ef76d47c2be88bd6f183ee242fee782a5"
-//        ),
-        .binaryTarget(
                     name: "DragonMedicalSpeechKit",
-                    path: "Sources/SDK/DragonMedicalSpeechKit.zip"
+                    dependencies: [
+                        .product(name: "YbridOpus", package: "YbridOpus")
+                    ],
+                    resources: [.copy("assets/DragonMedicalSpeechKit.bundle")]
                 )
     ]
 )
