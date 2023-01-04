@@ -42,7 +42,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>DragonMedicalSpeechKitLib_OpusLinker</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>DragonMedicalSpeechKitSDK</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>OpusLinker</key>
 		<dict>
 			<key>primary</key>
 			<true/>

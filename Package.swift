@@ -20,8 +20,12 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
             name: "DragonMedicalSpeechKitBundle",
-            dependencies: ["opus"],
             resources: [.copy("Resources/DragonMedicalSpeechKit.bundle")]
+        ),
+        .target(
+            name: "OpusLinker",
+            dependencies: ["opus"],
+            resources: [.copy("")]
         ),
 //        .binaryTarget(
 //            name: "DragonMedicalSpeechKit",
