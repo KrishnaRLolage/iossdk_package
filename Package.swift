@@ -22,7 +22,15 @@ let package = Package(
         .target(
             name: "DragonMedicalSpeechKitBundle",
             path: "Sources/SDK",
-            resources: [.copy("DragonMedicalSpeechKitBundle/")]
+            resources: [
+                .copy("DragonMedicalSpeechKitBundle/Correction.storyboardc"),
+                .copy("DragonMedicalSpeechKitBundle/acmod6_6000_enu_gen_car_f16_v1_0_1.dat"),
+                .copy("DragonMedicalSpeechKitBundle/anyspeech.fcf"),
+                .copy("DragonMedicalSpeechKitBundle/cdd.bnf"),
+                .copy("DragonMedicalSpeechKitBundle/clc_enu_cfg3_v6_1_0.dat"),
+                .copy("DragonMedicalSpeechKitBundle/vocon3200_asr.dat"),
+                .copy("DragonMedicalSpeechKitBundle/wuw.fcf"),
+            ]
         ),
         .binaryTarget(
                     name: "DragonMedicalSpeechKit",
@@ -31,3 +39,4 @@ let package = Package(
     ]
 )
 
+//
