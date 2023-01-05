@@ -28,8 +28,7 @@ let package = Package(
         .target(
             name: "DragonMedicalSpeechKitLib",
             dependencies: [.target(name: "DragonMedicalSpeechKit"), .product(name: "YbridOpus", package: "YbridOpus")],
-            path: "Sources/SDK",
-            resources: [.process("test.txt")]
+            path: "Sources/SDK"
         ),
         .binaryTarget(
                     name: "DragonMedicalSpeechKit",
