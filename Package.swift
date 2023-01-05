@@ -12,7 +12,7 @@ let package = Package(
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
         .library(
             name: "DragonMedicalSpeechKit",
-            targets: ["DragonMedicalSpeechKitLib", "Bundle"]
+            targets: ["DragonMedicalSpeechKitLib"]
         )
     ],
     targets: [
@@ -21,12 +21,8 @@ let package = Package(
         .target(
             name: "DragonMedicalSpeechKitLib",
             dependencies: [.target(name: "DragonMedicalSpeechKit")],
-            path: "Sources/SDK"
-        ),
-        .target(
-            name: "Bundle",
-            path: "Sources/Bundle",
-            resources: [.copy("assets/DragonMedicalSpeechKit.bundle")]
+            path: "Sources/SDK",
+            resources: [.process("assets/DragonMedicalSpeechKit.bundle")]
         ),
         .binaryTarget(
                     name: "DragonMedicalSpeechKit",
