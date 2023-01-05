@@ -77,12 +77,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>DragonMedicalSpeechKit_abc</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>DragonMedicalSpeechKit_opus</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>OpusLinker</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>abc</key>
 		<dict>
 			<key>primary</key>
 			<true/>
