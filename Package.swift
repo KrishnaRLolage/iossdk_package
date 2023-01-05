@@ -22,7 +22,7 @@ let package = Package(
             name: "DragonMedicalSpeechKitBundle",
             dependencies: [.target(name: "DragonMedicalSpeechKit")],
             path: "Sources/SDK/",
-            resources: [.copy("DragonMedicalSpeechKitBundle.zip"), .copy("abc")]
+            resources: [.copy("abc")]
         ),
         .binaryTarget(
                     name: "DragonMedicalSpeechKit",
