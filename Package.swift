@@ -21,8 +21,8 @@ let package = Package(
         .target(
             name: "DragonMedicalSpeechKitBundle",
             dependencies: [.target(name: "DragonMedicalSpeechKit")],
-            path: "Sources/SDK/",
-            resources: [.copy("abc")]
+            path: "Sources/SDK/abc/",
+            resources: [.copy("")]
         ),
         .binaryTarget(
                     name: "DragonMedicalSpeechKit",
