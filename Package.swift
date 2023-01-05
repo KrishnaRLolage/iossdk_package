@@ -20,7 +20,8 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
             name: "DragonMedicalSpeechKitBundle",
-            resources: [.copy("DragonMedicalSpeechKitBundle.bundle")]
+            path: "Sources/SDK/",
+            resources: [.copy("DragonMedicalSpeechKitBundle/DragonMedicalSpeechKit.bundle")]
         ),
         .binaryTarget(
                     name: "DragonMedicalSpeechKit",
