@@ -23,13 +23,7 @@ let package = Package(
             name: "DragonMedicalSpeechKitBundle",
             path: "Sources/SDK",
             resources: [
-                .process("DragonMedicalSpeechKitBundle/Correction.storyboardc"),
-                .process("DragonMedicalSpeechKitBundle/acmod6_6000_enu_gen_car_f16_v1_0_1.dat"),
-                .process("DragonMedicalSpeechKitBundle/anyspeech.fcf"),
-                .process("DragonMedicalSpeechKitBundle/cdd.bnf"),
-                .process("DragonMedicalSpeechKitBundle/clc_enu_cfg3_v6_1_0.dat"),
-                .process("DragonMedicalSpeechKitBundle/vocon3200_asr.dat"),
-                .process("DragonMedicalSpeechKitBundle/wuw.fcf"),
+                .process("DragonMedicalSpeechKitBundle"),
             ]
         ),
         .binaryTarget(
