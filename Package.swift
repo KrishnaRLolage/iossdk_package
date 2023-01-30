@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "DragonMedicalSpeechKit",
+    name: "Dragon-Medical-SpeechKit-iOS",
     defaultLocalization: "en",
     platforms: [
         .iOS(.v14)
@@ -12,18 +12,18 @@ let package = Package(
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
         .library(
-            name: "DragonMedicalSpeechKit",
-            targets: ["DragonMedicalSpeechKitBundle", "DragonMedicalSpeechKit"]
+            name: "Dragon-Medical-SpeechKit-iOS",
+            targets: ["Bundle", "DragonMedicalSpeechKit"]
         )
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
-            name: "DragonMedicalSpeechKitBundle",
+            name: "Bundle",
             path: "Sources/SDK",
             resources: [
-                .process("DragonMedicalSpeechKitBundle"),
+                .process("Bundle"),
             ]
         ),
         .binaryTarget(
